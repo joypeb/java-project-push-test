@@ -1,3 +1,5 @@
+package Java_221004;
+
 public class ArrTest {
     public static void main(String[] args) {
         System.out.println("hello");

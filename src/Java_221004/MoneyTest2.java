@@ -1,3 +1,5 @@
+package Java_221004;
+
 import java.util.Scanner;
 
 public class MoneyTest2 {
