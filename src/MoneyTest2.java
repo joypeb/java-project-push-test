@@ -15,21 +15,21 @@ public class MoneyTest2 {
 
         //step2
 
-        System.out.println("50000원 : " + refund/m1);
+        System.out.println("50000원 : " + refund/m1 + " 나머지 : " + refund%m1);
         refund%=50000;
-        System.out.println("10000원 : " + refund/m2);
+        System.out.println("10000원 : " + refund/m2 + " 나머지 : " + refund%m2);
         refund%=10000;
-        System.out.println("5000원 : " + refund/m3);
+        System.out.println("5000원 : " + refund/m3 + " 나머지 : " + refund%m3);
         refund%=5000;
-        System.out.println("1000원 : " + refund/m4);
+        System.out.println("1000원 : " + refund/m4 + " 나머지 : " + refund%m4);
         refund%=1000;
-        System.out.println("500원 : " + refund/m5);
+        System.out.println("500원 : " + refund/m5 + " 나머지 : " + refund%m5);
         refund%=500;
-        System.out.println("100원 : " + refund/m6);
+        System.out.println("100원 : " + refund/m6 + " 나머지 : " + refund%m6);
         refund%=100;
-        System.out.println("50원 : " + refund/m7);
+        System.out.println("50원 : " + refund/m7 + " 나머지 : " + refund%m7);
         refund%=50;
-        System.out.println("10원 : " + refund/m8);
+        System.out.println("10원 : " + refund/m8 + " 나머지 : " + refund%m8);
         refund%=10;
         System.out.println("남은돈 : " + refund);
     }
