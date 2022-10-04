@@ -1,1 +1,2 @@
-# java-project-push-test
+## 2022.10.04
+### 자바 나누기와 나머지
