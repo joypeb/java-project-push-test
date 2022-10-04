@@ -13,6 +13,8 @@ public class MoneyTest2 {
 
         int refund = 555350;
 
+        //step2
+
         System.out.println("50000원 : " + refund/m1);
         refund%=50000;
         System.out.println("10000원 : " + refund/m2);
