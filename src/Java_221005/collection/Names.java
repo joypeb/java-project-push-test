@@ -4,7 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Names {
-    List<String> students = new ArrayList<>();
+    private List<String> students = new ArrayList<>();
+    private List<Student> studentObj = new ArrayList<>();
+
+    public List<Student> getStudentObj() {
+        this.studentObj.add(new Student(1,"권하준","https://github.com/dongyeon-0822/java-project-exercise"));
+        this.studentObj.add(new Student(1,"조성윤","https://github.com/kang-subin/Java"));
+        this.studentObj.add(new Student(3,"안예은","https://github.com/KoKwanwun/LikeLion.git"));
+        this.studentObj.add(new Student(1,"남우빈","https://github.com/lcomment/Algorithm_Solution--Java/tree/main/LikeLion"));
+        this.studentObj.add(new Student(2,"최경민","https://github.com/cmkxak/likelion-java-course"));
+        this.studentObj.add(new Student(3,"안준휘","https://github.com/rnrudejr9/CodeLion-git-test"));
+        return studentObj;
+    }
     public List<String> names() {
         this.students.add("권하준");
         this.students.add("조성윤");
