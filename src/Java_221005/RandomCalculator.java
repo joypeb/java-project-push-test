@@ -2,12 +2,13 @@ package Java_221005;
 
 
 public class RandomCalculator {
-    RandomNumberCreater ranN = new RandomNumberCreater();
+    private NumberCreater numberCreater;
     private int a;
-    private int b = ranN.randomNumCreater();
+    private int b;
 
-    public RandomCalculator(int a) {
+    public RandomCalculator(int a, NumberCreater numberCreater) {
         this.a = a;
+        this.b = numberCreater.randomNumCreater();
     }
 
     int getB() {

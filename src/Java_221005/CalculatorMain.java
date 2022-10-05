@@ -5,8 +5,9 @@ public class CalculatorMain {
 
         int a = 10, b = 5;
 
+        RandomNumberCreater ranN = new RandomNumberCreater();
         Calculator cal = new Calculator(a,b);
-        RandomCalculator rCal = new RandomCalculator(a);
+        RandomCalculator rCal = new RandomCalculator(a, ranN);
 
         System.out.println("일반 숫자");
         System.out.println(a + " + " + b + " = " + cal.plus());
