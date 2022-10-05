@@ -9,11 +9,7 @@ public class Calculator {
         return a-b;
     }
 
-    double multiple(int a, int b) {
-        return a*b;
-    }
+    double multiple(int a, int b) { return (double) a*b; }
 
-    int divide(int a, int b) {
-        return a/b;
-    }
+    double divide(int a, int b) {return (double) a/b;}
 }
