@@ -8,6 +8,7 @@ public class PrintWord {
     }
 
     void printLangWord(int num1, int num2) {
-        System.out.println(wordmaker.wordMaker(num1,num2));
+        System.out.println(wordmaker.evenOddMaker(num1) + "+" + wordmaker.evenOddMaker(num2) + "="
+                + wordmaker.evenOddMaker(num1+num2));
     }
 }
