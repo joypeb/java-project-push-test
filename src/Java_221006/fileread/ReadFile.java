@@ -21,6 +21,19 @@ class ReadTxtFile {
         }
         return "error";
     }
+
+    public String readNTxtFile(String filename,int num) {
+        try(BufferedReader br = new BufferedReader(new FileReader(filename),8*1024)) {
+            String txt = "";
+            for(int i=0; i<num; i++) {
+                txt += (char)br.read();
+            }
+            return txt;
+        } catch (IOException e) {
+            new RuntimeException(e);
+        }
+        return "error";
+    }
 }
 
 public class ReadFile {
@@ -31,5 +44,6 @@ public class ReadFile {
 
         ReadTxtFile rtf = new ReadTxtFile("./src/Java_221006/fileread/a_file.txt");
         System.out.println(rtf.readTxtFile(rtf.getFilename()));
+        System.out.println(rtf.readNTxtFile(rtf.getFilename(), 4));
     }
 }
