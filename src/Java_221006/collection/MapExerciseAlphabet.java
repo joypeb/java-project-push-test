@@ -5,28 +5,26 @@ import java.util.Map;
 
 public class MapExerciseAlphabet {
     public static void main(String[] args) {
-        Map<Character,Integer> repoAlphabet = new HashMap<>();
+        IsAlphabet isAlphabet = new IsAlphabet();
 
-        String repo = "gellrlfoejfwon ".replaceAll(" ", "");
-        boolean repoTF = true;
+        Map<Character, Integer> repoAlphabet = new HashMap<>();
 
-        for(int i=0; i<repo.length(); i++) {
-            if((65 <= repo.charAt(i) && repo.charAt(i) <= 90) || (97 <= repo.charAt(i) && repo.charAt(i) <= 122)) {
-                repoTF = true;
-                repoAlphabet.put(repo.charAt(i),i);
-            }else {
-                repoTF = false;
-                break;
+        String repo = "gellrlfoejfwon ".replaceAll(" ", "").toUpperCase();
+
+        for(int j=65; j<=90; j++) {
+            repoAlphabet.put((char)j,0);
+        }
+
+        for (int i = 0; i < repo.length(); i++) {
+            char c = repo.charAt(i);
+            if (isAlphabet.isAlphabet(c)) {
+                repoAlphabet.put(c, repoAlphabet.get(c) + 1);
             }
         }
 
-        if(repoTF) {
-            for(Map.Entry<Character,Integer> c : repoAlphabet.entrySet()) {
-                System.out.print(c.getKey() + " ");
-            }
-            System.out.println("알파벳의 개수 : " + repoAlphabet.size());
-        }else{
-            System.out.println("영어가 아닙니다");
+
+        for (Map.Entry<Character, Integer> c : repoAlphabet.entrySet()) {
+            System.out.print(c.getKey() + " : " + c.getValue() + " | ");
         }
     }
 }

@@ -11,6 +11,7 @@ public class IsAlphabet {
 
     public static void main(String[] args) {
         IsAlphabet isAlphabet = new IsAlphabet();
+
         char chr = 'd';
         char chr2 = '0';
 
