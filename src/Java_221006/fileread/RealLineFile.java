@@ -16,7 +16,7 @@ class LineFile {
     }
 
     public void readLine(String fileName) {
-        try(BufferedReader br = new BufferedReader(new FileReader(fileName))){
+        try(BufferedReader br = new BufferedReader(new FileReader(this.fileName))){
             String str;
             System.out.println(br.readLine());
             while ((str = br.readLine()) != null) {
