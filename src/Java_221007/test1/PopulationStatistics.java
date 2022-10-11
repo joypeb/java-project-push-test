@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class PopulationStatistics {
     public static void main(String[] args) throws IOException {
-        String address = "./2021_인구관련연간자료_20220927_66125.csv";
+        String address = "./Files/2021_인구관련연간자료_20220927_66125.csv";
         StatisticAnalysis statisticAnalysis = new StatisticAnalysis(address);
         statisticAnalysis.populationStatisticsAnalysis();
         //statisticAnalysis.writeSeoul(statisticAnalysis.moveOutFromSeoul());
