@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class digitTest {
-    public int Soultion(int n) {
+    public int soultion(int n) {
         ArrayList<Integer> ar = new ArrayList();
         int result = 0;
 
@@ -27,6 +27,6 @@ public class digitTest {
 
         int num = sc.nextInt();
 
-        System.out.println(dt.Soultion(num));
+        System.out.println(dt.soultion(num));
     }
 }
