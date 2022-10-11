@@ -25,3 +25,11 @@
 - 인구이동조사를 이용해 데이터 가공
 - 파일 읽기, 쓰기
 - 데이터를 가공해 차트로 표시
+
+## 22.10.11
+
+- AWS EC2를 활용한 클라우드 서버 생성
+- 우분투에서 docker설치
+- docker를 이용해 mysql구동
+- mysql에서 기본적인 관계형 db구축
+- fk, pl, nn, auto increment, zerofill 실습
