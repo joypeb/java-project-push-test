@@ -7,11 +7,10 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         LineReader<Hospital> hospitalLineReader = new LineReader<>(new HospitalParser());
-        String filename = "./Files/서울시 병의원 위치 정보.csv";
+        String filename = "./Files/hospitals-info.csv";
         List<Hospital> hospitals = hospitalLineReader.readLine(filename);
 
-        for(Hospital hospital : hospitals) {
-            System.out.println(hospital.getId());
-        }
+        HospitalParser hp = new HospitalParser();
+        hp.writeSQL(hospitals);
     }
 }
