@@ -5,7 +5,6 @@ import Java_221012.hospital.Hospital;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
-import java.util.ArrayList;
 import java.util.List;
 
 public class HospitalParser implements Parser<Hospital>{
