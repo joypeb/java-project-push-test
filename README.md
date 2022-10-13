@@ -42,3 +42,5 @@
 
 ## 22.10.13
 - test작성 (https://github.com/joypeb/read-line-parser)
+- bubbleSort 알고리즘
+- 다형성을 이용한 csv데이터 sql문으로 파싱 후 db에 insert
