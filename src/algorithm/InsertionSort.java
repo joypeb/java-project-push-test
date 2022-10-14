@@ -4,12 +4,19 @@ import java.util.Arrays;
 
 public class InsertionSort {
     private int[] solution(int[] arr) {
-        int i = 1;
+        //재귀 : 반복문 없이 해야될때
         int temp = 0;
-        if(arr[i] < arr[i-1]) {
-            temp = arr[i-1];
-            arr[i-1] = arr[i];
-            arr[i] = temp;
+
+        for(int i=1; i< arr.length; i++) {
+            inner:for(int j=i; j>0; j--) {
+                if(arr[j] < arr[j-1]) {
+                    temp = arr[j-1];
+                    arr[j-1] = arr[j];
+                    arr[j] = temp;
+                } else {
+                    break inner;
+                }
+            }
         }
 
         return arr;
