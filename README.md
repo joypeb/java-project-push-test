@@ -46,3 +46,8 @@ Hospital, DB repo : https://github.com/joypeb/read-line-parser
 - test작성 (https://github.com/joypeb/read-line-parser)
 - bubbleSort 알고리즘
 - 다형성을 이용한 csv데이터 sql문으로 파싱 후 db에 insert
+
+## 22.10.14
+- 삽입정렬 알고리즘, 재귀함수를 이용한 삽입정렬
+- sql쿼리 작성 후 sql파일로 만들기
+- sql DB연동
