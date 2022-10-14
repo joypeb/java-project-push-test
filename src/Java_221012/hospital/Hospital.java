@@ -19,6 +19,12 @@ public class Hospital {
         this.subdivision = subdivision;
     }
 
+    public String getSqlInsertQuery() {
+        return String.format("INSERT INTO `likelion-db`.`seoul_hospital`\\n\" +\n" +
+                "                \"(`id`,`address`,`district`,`category`,`emergency_room`,`name`,`subdivision`)\\n\"+\n" +
+                "                \"VALUES\n");
+    }
+
     public String getId() {
         return id;
     }
