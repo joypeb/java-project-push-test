@@ -51,3 +51,10 @@ Hospital, DB repo : https://github.com/joypeb/read-line-parser
 - 삽입정렬 알고리즘, 재귀함수를 이용한 삽입정렬
 - sql쿼리 작성 후 sql파일로 만들기
 - sql DB연동
+
+## 22.10.17
+- 별찍기 알고리즘
+- db와 프로젝트 연결 (jdbc)
+- 환경변수를 이용한 host, user, pw암호화
+- connection, preparedStatement를 이용한 insert, select
+- 병원정보 insert
