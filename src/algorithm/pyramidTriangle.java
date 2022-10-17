@@ -25,6 +25,6 @@ public class pyramidTriangle {
     public static void main(String[] args) {
         pyramidTriangle pyramidTriangle = new pyramidTriangle();
 
-        pyramidTriangle.pyramid(5);
+        pyramidTriangle.pyramid(7);
     }
 }
