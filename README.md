@@ -58,3 +58,10 @@ Hospital, DB repo : https://github.com/joypeb/read-line-parser
 - 환경변수를 이용한 host, user, pw암호화
 - connection, preparedStatement를 이용한 insert, select
 - 병원정보 insert
+- html, css 기초
+
+## 22.10.18
+- 별찍기 알고리즘2
+- connection의 분리 추상클래스, 클래스
+- insert테스트 케이스 작성
+- javascript기초
